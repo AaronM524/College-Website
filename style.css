@@ -90,3 +90,11 @@ nav.shift ul li a {
   }
 
 
+  .hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: scale(1.1); /* Slightly zoom in on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}

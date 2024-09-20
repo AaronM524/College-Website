@@ -1,6 +1,13 @@
+
+
+
 /* Custom styles for the navbar */
 .navbar {
     background-color: #2774AE !important; /* Override Bootstrap's default background */
+}
+
+body {
+  background-color: #2774AE; /* Replace with your desired color */
 }
 
 .navbar-nav .nav-link {
@@ -106,3 +113,4 @@ nav.shift ul li a {
 .description {
   font-family: "Noto Sans", sans-serif;
 }
+

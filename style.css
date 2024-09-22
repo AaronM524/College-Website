@@ -1,38 +1,15 @@
- /* Stroke effect */
-nav.stroke ul li a,
-nav.fill ul li a {
-    position: relative;
-    color: #FFD100 !important; /* Set default text color to yellow */
-    text-decoration: none;
+.nav-link {
+  color: white; /* Default text color */
+  transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
 }
 
-nav.stroke ul li a:after,
-nav.fill ul li a:after {
-    position: absolute;
-    bottom: -2px; /* Adjusted to move the underline just below the text */
-    left: 50%;
-    transform: translateX(-50%); /* Center the underline */
-    width: 0%;
-    content: '';
-    background: #FFD100; /* Underline stroke color */
-    height: 1px;
-    transition: width 0.3s; /* Smooth transition for the underline */
-}
-
-nav.stroke ul li a:hover:after {
-    width: 100%; /* Full width on hover */
-}
-
-/* Optional: Ensuring the text stays yellow on active/focused links */
-.nav-link:active,
-.nav-link:focus {
-    color: #FFD100 !important;
+.nav-link:hover {
+  color: #FFB81C; /* Change to a gold color on hover */
+  text-decoration: underline; /* Underline effect on hover */
 }
 
 
-
-
-   /* Adam N Co Parallax Code */
+   /* Adam N Parallax Code */
    .parallax {
     background-image: url('images/UCLA\ HOME.jpg'); /* Add your image here */
     height: 65vh;
@@ -57,6 +34,8 @@ nav.stroke ul li a:hover:after {
     font-size: 1.5rem;
     margin: 0;
 }
+
+/* End of his code */
 
 #text {
   border: 2px solid #2774AE; /* Border color */
@@ -96,3 +75,5 @@ nav.stroke ul li a:hover:after {
 .parallaxh {
   color: #005587;
 }
+
+

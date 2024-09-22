@@ -1,65 +1,98 @@
-   /* Stroke effect */
-   nav.stroke ul li a,
-   nav.fill ul li a {
-       position: relative;
-       color: white !important; /* Set default text color to white */
-       text-decoration: none;
-   }
+ /* Stroke effect */
+nav.stroke ul li a,
+nav.fill ul li a {
+    position: relative;
+    color: #FFD100 !important; /* Set default text color to yellow */
+    text-decoration: none;
+}
 
-   nav.stroke ul li a:after,
-   nav.fill ul li a:after {
-       position: absolute;
-       bottom: 0;
-       left: 0;
-       right: 0;
-       margin: auto;
-       width: 0%;
-       content: '.';
-       color: transparent;
-       background: #FFD100; /* Underline stroke color */
-       height: 1px;
-   }
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+    position: absolute;
+    bottom: -2px; /* Adjusted to move the underline just below the text */
+    left: 50%;
+    transform: translateX(-50%); /* Center the underline */
+    width: 0%;
+    content: '';
+    background: #FFD100; /* Underline stroke color */
+    height: 1px;
+    transition: width 0.3s; /* Smooth transition for the underline */
+}
 
-   nav.stroke ul li a:hover:after {
-       width: 100%;
-   }
+nav.stroke ul li a:hover:after {
+    width: 100%; /* Full width on hover */
+}
 
-   
-
-   /* Optional: Ensuring the text stays yellow on active/focused links */
-   .nav-link:active,
-   .nav-link:focus {
-       color: #FFD100 !important;
-       text-decoration-color: #FFD100;
-   }
-
-/* Adam N Code */
- #skibidi {
-  /* The image used */
-  background-image: url("images/UCLA\ HOME.jpg");
-
-  /* Set a specific height */
-  min-height: 800px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  margin-left: -10px;
-  margin-right: -10px;
+/* Optional: Ensuring the text stays yellow on active/focused links */
+.nav-link:active,
+.nav-link:focus {
+    color: #FFD100 !important;
 }
 
 
 
-  /* Adam N Code */
-.section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+
+   /* Adam N Co Parallax Code */
+   .parallax {
+    background-image: url('images/UCLA\ HOME.jpg'); /* Add your image here */
+    height: 65vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
 }
 
-.section1 {
-  background-color: rgb(202, 202, 202);
+.parallax h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.parallax p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#text {
+  border: 2px solid #2774AE; /* Border color */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+  color: #333; /* Text color */
+  font-family: 'Arial', sans-serif; /* Professional font */
+}
+
+/* Image Spacing */
+.image-box {
+  margin-bottom: 30px; /* Space between images */
+}
+
+.textfont {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.fontheader {
+  color: #005587;
+}
+
+.shorttext {
+  color: #FFB81C;
+}
+
+#imgfix {
+  transition: transform 0.3s, opacity 0.3s; /* Smooth transition */
+}
+
+#imgfix:hover {
+  transform: scale(1.05); /* Slightly enlarge the image */
+  opacity: 0.9; /* Change opacity on hover */
+}
+
+.parallaxh {
+  color: #005587;
 }

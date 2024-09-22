@@ -1,5 +1,37 @@
+   /* Stroke effect */
+   nav.stroke ul li a,
+   nav.fill ul li a {
+       position: relative;
+       color: white !important; /* Set default text color to white */
+       text-decoration: none;
+   }
 
+   nav.stroke ul li a:after,
+   nav.fill ul li a:after {
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       margin: auto;
+       width: 0%;
+       content: '.';
+       color: transparent;
+       background: #FFD100; /* Underline stroke color */
+       height: 1px;
+   }
 
+   nav.stroke ul li a:hover:after {
+       width: 100%;
+   }
+
+   
+
+   /* Optional: Ensuring the text stays yellow on active/focused links */
+   .nav-link:active,
+   .nav-link:focus {
+       color: #FFD100 !important;
+       text-decoration-color: #FFD100;
+   }
 
 /* Adam N Code */
  #skibidi {

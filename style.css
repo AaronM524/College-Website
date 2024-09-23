@@ -76,4 +76,19 @@
   color: #005587;
 }
 
+.video-container {
+  max-width: 800px; /* Set a max width for the container */
+  margin: 0 auto; /* Center the container */
+}
 
+.video {
+  border: 5px solid #2774AE;
+  border-radius: 5px;
+  min-height: 300px;
+  width: 100%; /* Fill the container */
+}
+
+iframe {
+  height: 500px; /* Keep height as is */
+  width: 100%; /* Ensure iframe fills the video class */
+}
